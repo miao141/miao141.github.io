@@ -32,6 +32,10 @@
 	}
 	
 	loadData("java",0);
+	
+	function a(str){
+		alert($("#q").value);
+	}
 </script>
   </head>
 
@@ -57,7 +61,7 @@
 
 <p> hello world 
 <input   id="q" name="q"  value=""  maxlength=100 autocomplete="off" style="height: 28px;">
-<button type="submit">网盘一下</button></p>
+<button type="buttion" onClick="a()" >网盘一下</button></p>
  <div id="search_result">
 			  <div id="cse2"><div id="loading" style="text-align:center; font-size:15px; width:auto; height:60px; width:100%;"><img src="images/loading.gif" /> 正在加载数据，请稍后....请不要离开...</div></div>
 			  <div id="result">
