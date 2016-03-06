@@ -7,8 +7,32 @@
     <meta name="description" content="Hello miao141 : blog">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
+	<script src="javascripts/jQuery.js"></script>
     <title>Hello miao141</title>
+	<script type="text/javascript">
+	function loadData(q,start){
+		$.getJSON("http://113.10.139.102/server?jsoncallback=?",{q:q,start:start},function(result){
+			if(result.length==0){
+				alert("java1234_小锋老师提醒：未搜索到结果，请换个关键字！");
+			}else{
+				$("#result").children().remove();
+				$("#result").append("<font>搜索结果：</font><hr style='margin-top: 2px; margin-bottom: 10px;'></hr>");
+				$.each(result,function(i,val){
+					var di=$("<p>"+"<a style='font-size:16px;color:#1f4fcd;text-decoration:underline;' href='"+val.unescapedUrl+"' target='_blank'>"+val.title+"</a></br>"+
+							  "<span style='font-size:14px'>"+val.content+"</span></br>"+
+							  "<span style='color:green;font-size:13px'>"+val.unescapedUrl.substring(0, 100) +"...</span>"+
+							"</p><br/>");
+					$("#result").append(di);
+					$("#cse2").remove();
+					$("#pa").show();
+				});
+		    }
+		
+		},"json");
+	}
+	
+	loadData("java",0);
+</script>
   </head>
 
   <body>
@@ -34,7 +58,26 @@
 <p> hello world 
 <input   id="q" name="q"  value=""  maxlength=100 autocomplete="off" style="height: 28px;">
 <button type="submit">网盘一下</button></p>
- 
+ <div id="search_result">
+			  <div id="cse2"><div id="loading" style="text-align:center; font-size:15px; width:auto; height:60px; width:100%;"><img src="images/loading.gif" /> 正在加载数据，请稍后....请不要离开...</div></div>
+			  <div id="result">
+				     	
+				     </div>
+				     <div id="pa" class="pagination" style="display: none;">
+						  <ul >
+						    <li><a href="javascript:loadData('java',0)">第1页</a></li>
+						    <li><a href="javascript:loadData('java',10)">第2页</a></li>
+						    <li><a href="javascript:loadData('java',20)">第3页</a></li>
+						    <li><a href="javascript:loadData('java',30)">第4页</a></li>
+						    <li><a href="javascript:loadData('java',40)">第5页</a></li>
+						    <li><a href="javascript:loadData('java',50)">第6页</a></li>
+						    <li><a href="javascript:loadData('java',60)">第7页</a></li>
+						    <li><a href="javascript:loadData('java',70)">第8页</a></li>
+						    <li><a href="javascript:loadData('java',80)">第9页</a></li>
+						    <li><a href="javascript:loadData('java',90)">第10页</a></li>
+						  </ul>
+					</div>
+			</div>    
 
 <h3>
 <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
