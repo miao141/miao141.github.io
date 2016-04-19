@@ -38,13 +38,13 @@
 		loadData(s,0);
 		$("#pa").empty();
 		var oo = [0,10,20,30,40,50,60,70,80,90]
-	 
-	 $("#pa").append("<ul>");
+	 var di;
+	// $("#pa").append("<ul>");
 		$.each(oo,function(i,val){//"<ul>"+
-var di=$("<li><a href='javascript:loadData("+"\""+s+"\""+","+val+")'>第"+(i+1)+"页</a></li>" + "");
+	di+=$("<li><a href='javascript:loadData("+"\""+s+"\""+","+val+")'>第"+(i+1)+"页</a></li>" + "");
 		$("#pa").append(di);			  
 		});
-		$("#pa").append("</ul><br/>");
+		$("#pa").append("<ul>"+di+"</ul><br/>");
 		$("#pa").show();
 	}
 </script>
