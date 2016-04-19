@@ -41,8 +41,9 @@
 	 var di;
 	// $("#pa").append("<ul>");
 		$.each(oo,function(i,val){//"<ul>"+
-	di+=$("<li><a href='javascript:loadData("+"\""+s+"\""+","+val+")'>第"+(i+1)+"页</a></li>" + "");
-		$("#pa").append(di);			  
+	//di+=$("<li><a href='javascript:loadData("+"\""+s+"\""+","+val+")'>第"+(i+1)+"页</a></li>" + "");
+	di+="<li><a href='javascript:loadData("+"\""+s+"\""+","+val+")'>第"+(i+1)+"页</a></li>";
+	//		$("#pa").append(di);			  
 		});
 		$("#pa").append("<ul>"+di+"</ul><br/>");
 		$("#pa").show();
