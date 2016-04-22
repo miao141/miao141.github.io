@@ -12,7 +12,7 @@
 	function loadData(q,start){
 		$.getJSON("http://113.10.139.102/server?jsoncallback=?",{q:q,start:start},function(result){
 			if(result.length==0){
-				alert("java1234_小锋老师提醒：未搜索到结果，请换个关键字！");
+				alert("提醒：未搜索到结果，请换个关键字！");
 			}else{
 				$("#result").children().remove();
 				$("#result").append("<font>搜索结果：</font><hr style='margin-top: 2px; margin-bottom: 10px;'></hr>");
@@ -80,7 +80,7 @@
 <input   id="q" name="q"  value=""  maxlength=100 autocomplete="off" style="height: 28px;">
 <button type="buttion" onClick="a()" >网盘一下</button></p>
  <div id="search_result">
-  http://pan.baidu.com/s/1mhcGT0s <a href="http://pan.baidu.com/s/1mhcGT0s" target="_blank">醉生梦死</a>  百度网盘密码：g5q2 <br>
+   <a target="_self" href="thunder://QUFmdHA6Ly9qOmpAZHguZGwxMjM0LmNvbTo2MTQ5L1slRTclOTQlQjUlRTUlQkQlQjElRTUlQTQlQTklRTUlQTAlODJ3d3cuZHkyMDE4LmNvbV0lRTYlODglOTElRTQlQjglOEQlRTYlOTglQUYlRTclOEUlOEIlRTYlQUYlOUJIRCVFNCVCOCVBRCVFOCU4QiVCMSVFNSU4RiU4QyVFNSVBRCU5Ny5tcDRaWg==" title="迅雷专用高速下载" tbmfwldu="thunder://QUFmdHA6Ly9qOmpAZHguZGwxMjM0LmNvbTo2MTQ5L1slRTclOTQlQjUlRTUlQkQlQjElRTUlQTQlQTklRTUlQTAlODJ3d3cuZHkyMDE4LmNvbV0lRTYlODglOTElRTQlQjglOEQlRTYlOTglQUYlRTclOEUlOEIlRTYlQUYlOUJIRCVFNCVCOCVBRCVFOCU4QiVCMSVFNSU4RiU4QyVFNSVBRCU5Ny5tcDRaWg==" thunderpid="00000" thundertype="" thunderrestitle="" onclick="return OnDownloadClick_Simple(this,2)" oncontextmenu="ThunderNetwork_SetHref(this)">ftp://j:j@dx.dl1234.com:6149/[电影天堂www.dy2018.com]我不是王毛HD中英双字.mp4</a><br>
   <a target="_self" href="thunder://QUFmdHA6Ly81OjVAZHguZGwxMjM0LmNvbTo2NTk5L1slRTclOTQlQjUlRTUlQkQlQjElRTUlQTQlQTklRTUlQTAlODJ3d3cuZHkyMDE4LmNvbV0lRTglOEQlOTIlRTklODclOEUlRTclOEMlOEUlRTQlQkElQkFIRCVFNCVCOCVBRCVFOCU4QiVCMSVFNSU4RiU4QyVFNSVBRCU5Ny5ybXZiWlo=" title="迅雷专用高速下载" zdwfrqxj="thunder://QUFmdHA6Ly81OjVAZHguZGwxMjM0LmNvbTo2NTk5L1slRTclOTQlQjUlRTUlQkQlQjElRTUlQTQlQTklRTUlQTAlODJ3d3cuZHkyMDE4LmNvbV0lRTglOEQlOTIlRTklODclOEUlRTclOEMlOEUlRTQlQkElQkFIRCVFNCVCOCVBRCVFOCU4QiVCMSVFNSU4RiU4QyVFNSVBRCU5Ny5ybXZiWlo=" thunderpid="00000" thundertype="" thunderrestitle="" onClick="return OnDownloadClick_Simple(this,2)" oncontextmenu="ThunderNetwork_SetHref(this)">ftp://5:5@dx.dl1234.com:6599/[电影天堂www.dy2018.com]荒野猎人HD中英双字.rmvb</a>
 			  <div id="cse2" style="display:none"><div id="loading" style="text-align:center; font-size:15px; width:auto; height:60px; width:100%;"><img src="images/loading.gif" /> 正在加载数据，请稍后....请不要离开...</div></div>
 			  <div id="result">
