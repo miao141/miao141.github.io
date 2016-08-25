@@ -14,16 +14,7 @@
 			if(result.length==0){
 				alert("提醒：未搜索到结果，请换个关键字！");
 			}else{
-				$("#result").children().remove();
-				$("#result").append("<font>搜索结果：</font><hr style='margin-top: 2px; margin-bottom: 10px;'></hr>");
-				$.each(result,function(i,val){
-					var di=$("<p>"+"<a style='font-size:16px;color:#1f4fcd;text-decoration:underline;' href='"+val.unescapedUrl+"' target='_blank'>"+val.title+"</a></br>"+
-							  "<span style='font-size:14px'>"+val.content+"</span></br>"+
-							  "<span style='color:green;font-size:13px'>"+val.unescapedUrl.substring(0, 100) +"...</span>"+
-							"</p><br/>");
-					$("#result").append(di);
-					$("#cse2").remove();
-					$("#pa").show();
+				 
 				});
 		    }
 		
@@ -81,38 +72,17 @@
 <button type="buttion" onClick="a()" >网盘一下</button></p>
 -->
  <div id="search_result">
-   <a href="ql.html">权力的游戏 -6季 六季 </a>
+   <a href="http://www.daman.cc/comic1/19955/">剑风传奇第二季 </a>
    
 			  <div id="cse2" style="display:none"><div id="loading" style="text-align:center; font-size:15px; width:auto; height:60px; width:100%;"><img src="images/loading.gif" /> 正在加载数据，请稍后....请不要离开...</div></div>
 			  <div id="result">
 			  </div>   
-				     <div id="pa" class="pagination" style="display: none;">
-						  <ul >
-						    <li><a href="javascript:loadData('java',0)">第1页</a></li>
-						    <li><a href="javascript:loadData('java',10)">第2页</a></li>
-						    <li><a href="javascript:loadData('java',20)">第3页</a></li>
-						    <li><a href="javascript:loadData('java',30)">第4页</a></li>
-						    <li><a href="javascript:loadData('java',40)">第5页</a></li>
-						    <li><a href="javascript:loadData('java',50)">第6页</a></li>
-						    <li><a href="javascript:loadData('java',60)">第7页</a></li>
-						    <li><a href="javascript:loadData('java',70)">第8页</a></li>
-						    <li><a href="javascript:loadData('java',80)">第9页</a></li>
-						    <li><a href="javascript:loadData('java',90)">第10页</a></li>
-						  </ul>
-					</div>
+				      
 			</div>    
 
    
 <p>
-《权力的游戏》将在本周日正式回归，虽然也只有三天的时间，但估计剧迷们早就等不到看到它了。没关系，现在片方又在社交媒体平台上放出了一波新的剧照，来给我们的观众们解解馋。
-	
-	<img src="images/ql/3b61a54420d4009.png_600x600.png"><br>
-	<img src="images/ql/76f5e6f51d4d7eb.jpg_600x600.jpg"><br>
-	<img src="images/ql/392a6e5c072851c.jpg_600x600.jpg"><br>
-	<img src="images/ql/223092846e2f70f.jpg_600x600.jpg"><br>
-	<img src="images/ql/5375efadc75d83e.jpg_600x600.jpg"><br>
-	<img src="images/ql/109fcd6da2a9365.jpg_600x600.jpg"><br>
-	<img src="images/ql/51b39f257267224.jpg_600x600.jpg"><br>
+ 
 	
 </p>
       </section>
