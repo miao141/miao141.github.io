@@ -11,15 +11,14 @@
     <title>我的帮手</title>
 	<script type="text/javascript">
 	function loadData(q,start){
-	/*	
+	 	
 		var url = "http://m.pan.open1111.com/search?&q="+q+"&start="+start;
 	$.ajax({
      url:url,
-     dataType:'jsonp',
+     dataType:'json',
      processData: false, 
      type:'get',
-     jsonp: 'callback',
-     jsonpCallback: "receive",
+   
      success:function(result){
       if(result.length==0){
 				alert("提醒：未搜索到结果，请换个关键字！");
@@ -45,31 +44,8 @@
 		
 	 	
 	
-		*/
-		$.getJSON("http://m.pan.open1111.com/search?jsoncallback=?",{q:q,start:start},function(result){
-		//$.getJSON("http://m.pan.open1111.com/search",{q:q,start:start},function(result){
-		//$.getJSON("http://113.10.139.102/server?jsoncallback=?",{q:q,start:start},function(result){
-			if(result.length==0){
-				alert("提醒：未搜索到结果，请换个关键字！");
-			}else{
-				 $("#result").children().remove();
- -				$("#result").append("<font>搜索结果：</font><hr style='margin-top: 2px; margin-bottom: 10px;'></hr>");
- -				$.each(result.rows,function(i,val){
- -					/*var di=$("<p>"+"<a style='font-size:16px;color:#1f4fcd;text-decoration:underline;' href='"+val.unescapedUrl+"' target='_blank'>"+val.title+"</a></br>"+
- -							  "<span style='font-size:14px'>"+val.content+"</span></br>"+
- -							  "<span style='color:green;font-size:13px'>"+val.unescapedUrl.substring(0, 100) +"...</span>"+
- -							"</p><br/>");
- 					*/
- -					$("#result").append("<p>"+"<a style='font-size:16px;color:#1f4fcd;text-decoration:underline;' href='"+val.unescapedUrl+"' target='_blank'>"+val.title+"</a></br>"+
- -							  "<span style='font-size:14px'>"+val.content+"</span></br>"+
- -							  "<span style='color:green;font-size:13px'>"+val.unescapedUrl.substring(0, 100) +"...</span>"+
- -							"</p><br/>");
- -					$("#cse2").remove();
- -					$("#pa").show();
-				});
-		    }
+		 
 		
-		},"json");
 	}
 	
 function receive(data){
