@@ -18,6 +18,7 @@
      processData: false, 
      type:'get',
      jsonp: 'jsonpCallback',
+     jsonpCallback: "receive",
      success:function(result){
       if(result.length==0){
 				alert("提醒：未搜索到结果，请换个关键字！");
@@ -50,7 +51,10 @@
 		*/
 	}
 	
-	//loadData("java",0);
+function receive(data){
+	alert(data);
+}
+//loadData("java",0);
 	
 	function a(){
 		 
