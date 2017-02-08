@@ -23,7 +23,10 @@
  -							  "<span style='font-size:14px'>"+val.content+"</span></br>"+
  -							  "<span style='color:green;font-size:13px'>"+val.unescapedUrl.substring(0, 100) +"...</span>"+
  -							"</p><br/>");
- -					$("#result").append(di);
+ -					$("#result").append("<p>"+"<a style='font-size:16px;color:#1f4fcd;text-decoration:underline;' href='"+val.unescapedUrl+"' target='_blank'>"+val.title+"</a></br>"+
+ -							  "<span style='font-size:14px'>"+val.content+"</span></br>"+
+ -							  "<span style='color:green;font-size:13px'>"+val.unescapedUrl.substring(0, 100) +"...</span>"+
+ -							"</p><br/>");
  -					$("#cse2").remove();
  -					$("#pa").show();
 				});
