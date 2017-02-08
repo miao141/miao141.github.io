@@ -14,7 +14,7 @@
 		var url = "http://m.pan.open1111.com/search?&q="+q+"&start="+start;
 	$.ajax({
      url:url,
-    // dataType:'jsonp',
+     dataType:'json',
      processData: false, 
      type:'get',
      success:function(result){
