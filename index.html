@@ -10,7 +10,9 @@
     <title>我的帮手</title>
 	<script type="text/javascript">
 	function loadData(q,start){
-		$.getJSON("http://113.10.139.102/server?jsoncallback=?",{q:q,start:start},function(result){
+		
+		$.getJSON("http://m.pan.open1111.com/search",{q:q,start:start},function(result){
+		//$.getJSON("http://113.10.139.102/server?jsoncallback=?",{q:q,start:start},function(result){
 			if(result.length==0){
 				alert("提醒：未搜索到结果，请换个关键字！");
 			}else{
